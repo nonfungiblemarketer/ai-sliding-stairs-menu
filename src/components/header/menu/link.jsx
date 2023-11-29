@@ -6,7 +6,7 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import Link from 'next/link';
 
-export default function Link({data, index}) {
+export default function Index({data, index}) {
     const { title, description, images } = data;
     const outer = useRef(null);
     const inner = useRef(null);
