@@ -50,6 +50,7 @@ export default function Index({data, index}) {
                 <div ref={inner} className={styles.inner}>
 
                     {
+                        /* eslint-disable react/no-array-index-key */
                         [...Array(2)].map( (_, index) => {
                         return <div key={index} className={styles.container}>
                             <div className={styles.imageContainer}>
@@ -70,6 +71,7 @@ export default function Index({data, index}) {
                             <p>{description}</p>
                         </div>
                         })
+                        /* eslint-enable react/no-array-index-key */
                     }
                     
                 </div>
